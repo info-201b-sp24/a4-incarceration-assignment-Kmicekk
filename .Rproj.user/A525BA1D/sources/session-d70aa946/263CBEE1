@@ -3,7 +3,7 @@
     "path": "C:/Users/Kohch/OneDrive/Desktop/Info201/a4-incarceration-assignment-Kmicekk/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "2836260614",
+    "hash": "1702217648",
     "contents": "",
     "dirty": false,
     "created": 1716232092604.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "58,0",
-        "scrollLine": "48"
+        "cursorPosition": "59,623",
+        "scrollLine": "50"
     },
     "folds": "",
-    "lastKnownWriteTime": 1716403568,
+    "lastKnownWriteTime": 1716418649,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1716403568702,
+    "last_content_update": 1716418649355,
     "read_only": false,
     "read_only_alternatives": []
 }
