@@ -1,24 +1,24 @@
 {
-    "id": "AC3DCB43",
-    "path": "C:/Users/Kohch/OneDrive/Desktop/Info201/a4-incarceration-assignment-Kmicekk/README.md",
-    "project_path": "README.md",
-    "type": "markdown",
+    "id": "3352A134",
+    "path": "C:/Users/Kohch/OneDrive/Desktop/Info201/a4-incarceration-assignment-Kmicekk/map_example.R",
+    "project_path": "map_example.R",
+    "type": "r_source",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1716232104355.0,
+    "created": 1716354334040.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 5,
     "properties": {
         "source_window_id": "",
         "Source": "Source"
     },
     "folds": "",
-    "lastKnownWriteTime": 1716232006,
+    "lastKnownWriteTime": 1716232007,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1716232006,
+    "last_content_update": 1716232007,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,0 +1,26 @@
+x_values <- seq(1, 3)
+y_values <- seq(1,3)
+
+library(ggplot2)
+library(dplyr)
+library(stringr)
+
+inc_data <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-jail-rates-1990.csv?raw=true")
+
+
+data_total <- inc_data %>%
+  group_by(year) %>%
+  summarise(
+    aapi_jail_pop_us = sum(aapi_jail_pop_rate, na.rm = TRUE),
+    black_jail_pop_us = sum(black_jail_pop_rate, na.rm = TRUE),
+    white_jail_pop_us = sum(white_jail_pop_rate, na.rm = TRUE),
+    latinx_jail_pop_us = sum(latinx_jail_pop_rate, na.rm = TRUE))%>%
+  #rename("Asian" = aapi_jail_pop_rate, 
+         #"Black" = black_jail_pop_rate, 
+         #"White" = white_jail_pop_rate,
+         #"Latinx" = latinx_jail_pop_rate)
+
+
+asian_data <- ggplot(data = data_total) +
+  geom_line(mapping = aes(x = year, y = Asian)) +
+  labs(title = "Total Asian incarcerated population in the US from 1990", x = "Year", y= "Number of Incarcerated Asian people")
