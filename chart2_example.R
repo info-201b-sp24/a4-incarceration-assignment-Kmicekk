@@ -15,7 +15,7 @@ jail_compare <- ggplot(data = jail_pop_comp) +
   geom_line(aes(x = year, y = black_jail_pop_sum, color = "Black")) +
   geom_line(aes(x = year, y = white_jail_pop_sum, color = "White")) +
   labs(title = "Number of Black vs White incarcerated people over years", x = "Year",
-       y = "Incarcerated Population", color = "Race") +
+       y = "Jailed Incarcerated Population", color = "Race") +
   scale_color_manual(values = c("Black" = "blue", "White" = "red"))
 
 jail_compare

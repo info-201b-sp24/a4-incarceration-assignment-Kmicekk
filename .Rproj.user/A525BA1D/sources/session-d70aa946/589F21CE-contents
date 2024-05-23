@@ -5,22 +5,27 @@ library(ggplot2)
 library(dplyr)
 library(stringr)
 
-inc_data <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-jail-rates-1990.csv?raw=true")
+prison_data <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-pop.csv?raw=true")
 
 
-data_total <- inc_data %>%
-  group_by(year) %>%
+prison_data <- inc_data %>%
+  group_by(year, state) %>%
   summarise(
-    aapi_jail_pop_us = sum(aapi_jail_pop_rate, na.rm = TRUE),
-    black_jail_pop_us = sum(black_jail_pop_rate, na.rm = TRUE),
-    white_jail_pop_us = sum(white_jail_pop_rate, na.rm = TRUE),
-    latinx_jail_pop_us = sum(latinx_jail_pop_rate, na.rm = TRUE))%>%
-  #rename("Asian" = aapi_jail_pop_rate, 
-         #"Black" = black_jail_pop_rate, 
-         #"White" = white_jail_pop_rate,
-         #"Latinx" = latinx_jail_pop_rate)
+    Asian = sum(aapi_prison_pop, na.rm = TRUE)
+  )
 
+total_aapi_per_location <- prison_data %>%
+  group_by(state) %>%
+  summarise(total_aapi = sum(Asian, na.rm = TRUE)) %>%
+  arrange(desc(total_aapi)) %>%
+  top_n(5)
+top_5_locations_data <- prison_data %>%
+  filter(state %in% total_aapi_per_location$state)
 
-asian_data <- ggplot(data = data_total) +
-  geom_line(mapping = aes(x = year, y = Asian)) +
-  labs(title = "Total Asian incarcerated population in the US from 1990", x = "Year", y= "Number of Incarcerated Asian people")
+plot_top_5_locations <- ggplot(data = top_5_locations_data, aes(x = year, y = Asian, color = state)) +
+  geom_line() +
+  labs(title = "Trends of AAPI Population in Top 5 States", x = "Year", y = "AAPI Population", color = "State") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+plot_top_5_locations

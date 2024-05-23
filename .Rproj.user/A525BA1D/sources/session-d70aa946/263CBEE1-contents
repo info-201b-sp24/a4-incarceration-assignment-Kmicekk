@@ -5,7 +5,7 @@ output: html_document
 
 ### Introduction
 
-This report will be about the race inequality rate of incarceration and how many of each races are in Prison and Jail, and the rise of incarceration rate over the years,
+This report will be about the race inequality rate of incarceration and how many of each races are in Prison and Jail, and the rise of incarceration rate over the years. I want to specifically focus on the AAPI, and Black variables since I believe the Black population have the worst experience with inequlity relating to incarceration, and I also want to do AAPI since i'm curious about the data of my own race.
 
 ### Summary Information
 
@@ -32,40 +32,22 @@ What are possible limitations or problems with this data?   (at least 200 words)
 
 ### Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+![](Chart1.png)
 
-The first chart that you will create and include will show the trend over time of your variable/topic. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - This may mean showing the same measure for different locations or different racial groups. Think carefully about a meaningful comparison of locations (e.g., the top 10 counties in a state, top 10 states, etc.)
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-"``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+This chart provides the trends of AAPI population in all the states, and gathers the states that are top 5 population wise, and gathers it on the data. From this data, it's easy to see that the number one is Hawaii, and lowest one out of the top 5 is Colorado. 
 ```
 
 ### Variable Comparison Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The second chart that you will create and include will show how two different (continuous) variables are related to one another. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
 
 ![](Chart2.png)
 
 This chart compares the population of White incacerated people and number of black incarcerated individuals over the years of 1970-2020. I included this chart since I wanted to know the simple differnce between the population, and if these 2 datas had any significant differences. It occured to me that even thought the chart says the population for white incarcerated individuals are higher, I believe the rate for black incarcerated individuals are higher, since they have a lower population in the U.S. and having the numbers be the same as white incarcerated populations in some years tell us the rate is a lot higher. 
 
+
 ### Map
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+![](Chart3.png)
 
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Your map needs a title
-- Your color scale needs a legend with a clear label
-- Use a map based coordinate system to set the aspect ratio of your map
+For my map chart, I decided to collect the national data of the Black population in Jail, and displayed it on the map. With the legend, we can see that the lighter the color, more of the black population is in Jail, and with this map we can see taht states such as California, Texas, and Florida have the highest black incarcerated rate in the US.
 
