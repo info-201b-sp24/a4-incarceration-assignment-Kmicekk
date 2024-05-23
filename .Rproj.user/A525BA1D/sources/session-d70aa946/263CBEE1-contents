@@ -9,13 +9,10 @@ This report will be about the race inequality rate of incarceration and how many
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+Some summary findings I calculated are, what are the average incarceration rate across the nation each year, what are the average incarceration rate of every race
 
-These will likely be calculated using your DPLYR skills, answering questions such as: 
+The average incarceration rate has always increased per year, but specifically 2018 has a total incarceration rate of 104226.64
 
-- What is the average value of my variable across all the counties (in the current year)?
-- Where is my variable the highest / lowest?
-- How much has my variable change over the last N years?
 
 Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
 
